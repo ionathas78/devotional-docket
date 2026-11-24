@@ -1,0 +1,4 @@
+@import "../default/theme.css";
+body{--paper:#fff8e9;--ink:#443a30;--ornament-color:#94734f;font-family:Georgia,serif}
+article h1,article h2{font-family:"Segoe Print","Bradley Hand","Apple Chancery","Brush Script MT",cursive;font-weight:normal}
+article p{font-style:italic}
