@@ -66,5 +66,9 @@
   {
     "id": "typewriter",
     "name": "Typewriter"
+  },
+  {
+    "id": "journal",
+    "name": "Journal"
   }
 ]
