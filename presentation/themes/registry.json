@@ -50,5 +50,21 @@
   {
     "id": "amber",
     "name": "Amber"
+  },
+  {
+    "id": "library",
+    "name": "Library"
+  },
+  {
+    "id": "monastic",
+    "name": "Monastic"
+  },
+  {
+    "id": "modernist",
+    "name": "Modernist"
+  },
+  {
+    "id": "typewriter",
+    "name": "Typewriter"
   }
 ]
