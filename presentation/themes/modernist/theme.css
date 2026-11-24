@@ -1,0 +1,2 @@
+@import "../default/theme.css";
+body{--paper:#f7f8fa;--ink:#27313c;--ornament-color:#61748a;font-family:system-ui,-apple-system,sans-serif}h1,h2{font-weight:600;letter-spacing:-.025em}
