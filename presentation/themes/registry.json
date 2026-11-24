@@ -10,5 +10,45 @@
   {
     "id": "vespers",
     "name": "Vespers"
+  },
+  {
+    "id": "plum",
+    "name": "Plum"
+  },
+  {
+    "id": "forest",
+    "name": "Forest"
+  },
+  {
+    "id": "night",
+    "name": "Night"
+  },
+  {
+    "id": "sandstone",
+    "name": "Sandstone"
+  },
+  {
+    "id": "clay",
+    "name": "Clay"
+  },
+  {
+    "id": "ocean",
+    "name": "Ocean"
+  },
+  {
+    "id": "sage",
+    "name": "Sage"
+  },
+  {
+    "id": "rose",
+    "name": "Rose"
+  },
+  {
+    "id": "slate",
+    "name": "Slate"
+  },
+  {
+    "id": "amber",
+    "name": "Amber"
   }
 ]
