@@ -12,18 +12,24 @@ for(const t of themes)picker.add(new Option(t.name,t.id));
 const keys=["size","spacing","width"];
 function sync(){
  for(const k of keys){$(k).value=prefs[k];document.querySelector('output[for="'+k+'"]').textContent=prefs[k]+(k==="size"?"%":k==="width"?" rem":"");}
- for(const el of document.querySelectorAll("#decoration-controls input"))el.checked=prefs[el.name]===el.value;
+ for(const el of document.querySelectorAll("#decoration-controls select")){
+ el.value=prefs[el.name];
+ const preview=el.parentElement.querySelector(".decal-preview"),d=registry.find(d=>d.category===el.name&&d.id===el.value);
+ preview.hidden=!d;
+ if(d)preview.style.setProperty("--decal",'url("'+new URL("presentation/decorations/"+d.src,document.baseURI).href+'")');
+ }
  apply(prefs,registry);
 }
-function change(k,v){prefs=validate({...prefs,[k]:v},registry);save({...validate(saved(),registry),[k]:prefs[k]});sync();}
+function change(k,v){prefs=validate({...prefs,[k]:v},registry);save({...validate(saved(),registry),[k]:prefs[k]});if(active){const route=parseRoute();if(route.overrides&&Object.prototype.hasOwnProperty.call(route.overrides,k)){delete route.overrides[k];history.replaceState(null,"",routeFor(active.theme,active.id,route.overrides));}}sync();}
 for(const k of keys)$(k).addEventListener("input",()=>change(k,$(k).value));
 for(const category of ["header","divider","footer"]){
- const group=document.createElement("fieldset"),legend=document.createElement("legend");legend.textContent=category;group.append(legend);
- for(const d of [{id:"none",name:"None"},...registry.filter(d=>d.category===category)]){
- const label=document.createElement("label"),input=document.createElement("input");input.type="radio";input.name=category;input.value=d.id;input.addEventListener("change",()=>change(category,d.id));label.append(input);
- if(d.src){const preview=document.createElement("span");preview.className="decal-preview";preview.setAttribute("aria-hidden","true");preview.style.setProperty("--decal",'url("presentation/decorations/'+d.src+'")');label.append(preview);}
- label.append(document.createTextNode(d.name));group.append(label);
- }$("decoration-controls").append(group);
+ const label=document.createElement("label"),select=document.createElement("select"),preview=document.createElement("span");
+ label.append(document.createTextNode(category[0].toUpperCase()+category.slice(1)));
+ select.name=category;
+ for(const d of [{id:"none",name:"None"},...registry.filter(d=>d.category===category)])select.add(new Option(d.name,d.id));
+ select.addEventListener("change",()=>change(category,select.value));
+ preview.className="decal-preview";preview.setAttribute("aria-hidden","true");preview.hidden=true;
+ label.append(select,preview);$("decoration-controls").append(label);
 }
 $("reset").addEventListener("click",()=>{prefs={...defaults};save(prefs);if(active)history.replaceState(null,"",routeFor(active.theme,active.id));sync();});
 async function load(){
