@@ -1,0 +1,23 @@
+{
+  "id": "00000000-0000-4000-8000-000000000001",
+  "title": "A place for reflection",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is a demonstration record for Devotional Docket, not a generated daily devotional."
+    },
+    {
+      "type": "quote",
+      "text": "Be still, and know that I am God.",
+      "source": "Psalm 46:10 (KJV, excerpt)"
+    },
+    {
+      "type": "heading",
+      "text": "Reflection"
+    },
+    {
+      "type": "paragraph",
+      "text": "What might you notice if you gave yourself a moment of quiet?"
+    }
+  ]
+}
