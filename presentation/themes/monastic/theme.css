@@ -1,0 +1,2 @@
+@import "../default/theme.css";
+body{--paper:#ece7dc;--ink:#38352e;--ornament-color:#776b52;font-family:"Times New Roman",Times,serif}h1,h2{font-weight:normal;letter-spacing:.08em;text-align:center}blockquote{font-style:italic}
