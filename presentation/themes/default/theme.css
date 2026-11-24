@@ -1,0 +1,4 @@
+body{font-family:Georgia,serif;background:var(--paper,#fff);color:var(--ink,#262626);line-height:1.7;font-size:1.1rem}
+.site-header,.site-footer{font-family:system-ui,sans-serif;font-size:.85rem;padding-block:1rem}
+.site-header,.site-footer{border-block-end:1px solid currentColor}
+a{color:inherit}article{padding-block:2rem}h1{font-size:1.8em;line-height:1.2}h2{font-size:1.2em}blockquote{margin-inline:0;padding-inline-start:1rem;border-inline-start:2px solid currentColor}cite,time{font-size:.9em}
