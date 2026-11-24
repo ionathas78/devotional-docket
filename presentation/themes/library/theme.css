@@ -1,0 +1,2 @@
+@import "../default/theme.css";
+body{--paper:#f3ebd8;--ink:#423525;--ornament-color:#8c7044;font-family:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}h1{font-variant:small-caps;letter-spacing:.035em}article>p:first-of-type::first-letter{font-size:1.65em}
