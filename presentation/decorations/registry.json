@@ -1,0 +1,56 @@
+[
+  {
+    "id": "olive",
+    "name": "Olive branch",
+    "category": "header",
+    "src": "headers/olive.svg"
+  },
+  {
+    "id": "star",
+    "name": "Celestial",
+    "category": "header",
+    "src": "headers/star.svg"
+  },
+  {
+    "id": "diamond",
+    "name": "Geometric",
+    "category": "header",
+    "src": "headers/diamond.svg"
+  },
+  {
+    "id": "olive",
+    "name": "Olive branch",
+    "category": "divider",
+    "src": "dividers/olive.svg"
+  },
+  {
+    "id": "star",
+    "name": "Celestial",
+    "category": "divider",
+    "src": "dividers/star.svg"
+  },
+  {
+    "id": "diamond",
+    "name": "Geometric",
+    "category": "divider",
+    "src": "dividers/diamond.svg"
+  },
+  {
+    "id": "olive",
+    "name": "Olive branch",
+    "category": "footer",
+    "src": "footers/olive.svg"
+  },
+  {
+    "id": "star",
+    "name": "Celestial",
+    "category": "footer",
+    "src": "footers/star.svg"
+  },
+  {
+    "id": "diamond",
+    "name": "Geometric",
+    "category": "footer",
+    "src": "footers/diamond.svg"
+  }
+]
